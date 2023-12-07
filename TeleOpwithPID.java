@@ -59,7 +59,7 @@ public class TeleOpwithPID extends LinearOpMode {
             }
 
             if (currentGamepad2.a && !previousGamepad2.a){
-                states.setStatePos(StatesBhindi.statePos.INTAKE);
+                states.setStatePos(StatesBhindi.statePos.INTAKE_AND_OPEN_CLAW);
             }
 
             if (currentGamepad2.b && !previousGamepad2.b){
