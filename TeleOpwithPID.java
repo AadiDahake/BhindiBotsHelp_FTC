@@ -41,6 +41,12 @@ public class TeleOpwithPID extends LinearOpMode {
         waitForStart();
         while (opModeIsActive()) {
 
+            previousGamepad1.copy(currentGamepad1);
+            currentGamepad1.copy(gamepad1);
+
+            previousGamepad2.copy(currentGamepad2);
+            currentGamepad2.copy(gamepad2);
+
             if (currentGamepad2.x && !previousGamepad2.x){
                 states.setStatePos(StatesBhindi.statePos.CLAW_CLOSE);
             }
